@@ -1,0 +1,23 @@
+<div class="homepage">
+  <div class="homepage__navigation">
+    <nav class="navigation">
+      <ul class="navigation__list list-unstyled">
+        <li class="navigation__item" *ngFor="let item of items">
+          <a
+            class="navigation__link d-flex align-items-center"
+            routerLink="{{ item.route }}"
+            routerLinkActive="navigation__link--active"
+          >
+            <div class="navigation__label">
+              {{ item.label }}
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="homepage__content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

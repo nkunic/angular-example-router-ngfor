@@ -1,0 +1,44 @@
+.homepage {
+  border: {
+    style: solid;
+    color: black;
+    width: 1px;
+  }
+  .homepage__navigation {
+    padding: 0 0.625rem;
+    .navigation__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0;
+      list-style: none;
+      .navigation__link {
+        color: black;
+        font: {
+          size: 1rem;
+          weight: bold;
+        }
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &.navigation__link--active {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .homepage__content {
+    border: {
+      top: {
+        style: solid;
+        color: black;
+        width: 1px;
+      }
+    }
+    padding: 0.625rem;
+  }
+}
